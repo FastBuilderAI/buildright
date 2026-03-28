@@ -1,0 +1,84 @@
+{
+  "OWASP_Top_10_2021": [
+    {
+      "id": "OWASP_A01_BROKEN_ACCESS_CONTROL",
+      "action": "Enforce_Least_Privilege",
+      "logic": "The principle of least privilege should be implemented throughout the application. Deny by default and only allow access based on explicit roles and context.",
+      "data": "[authorization_check], [multi_tenant_isolation], [role_metadata]",
+      "access": "Role_Security_Officer",
+      "event": "On_Resource_Access"
+    },
+    {
+      "id": "OWASP_A02_CRYPTOGRAPHIC_FAILURES",
+      "action": "Protect_Sensitive_Data",
+      "logic": "Apply cryptographic controls to data at rest and in transit. Use strong algorithms (e.g., AES-256-GCM, SHA-256) and ensure proper key management.",
+      "data": "[encryption_at_rest], [tls_1.3], [key_management]",
+      "access": "Role_Cryptographer",
+      "event": "On_Data_Processing"
+    },
+    {
+      "id": "OWASP_A03_INJECTION",
+      "action": "Sanitize_Input",
+      "logic": "Use parameterized queries and strongly typed APIs to prevent Injection attacks. Sanitize and validate all user-supplied input before use in sensitive operations.",
+      "data": "[parameterized_queries], [input_validation], [orm_safe_calls]",
+      "access": "Role_Security_Auditor",
+      "event": "On_External_Input"
+    },
+    {
+      "id": "OWASP_A04_INSECURE_DESIGN",
+      "action": "Secure_By_Design",
+      "logic": "Use threat modeling, secure design patterns, and reference architectures to build a secure foundational structure.",
+      "data": "[threat_model], [secure_patterns], [security_boundary]",
+      "access": "Role_Architect",
+      "event": "On_Architectural_Decision"
+    },
+    {
+      "id": "OWASP_A05_SECURITY_MISCONFIG",
+      "action": "Harden_Infrastructure",
+      "logic": "Ensure all software stacks are properly configured—remove default passwords, disable unnecessary services, and maintain secure environment settings.",
+      "data": "[hardening_config], [no_default_creds], [least_minimal_stack]",
+      "access": "Role_System_Admin",
+      "event": "On_Deployment"
+    },
+    {
+      "id": "OWASP_A06_VULNERABLE_COMPONENTS",
+      "action": "Update_Dependencies",
+      "logic": "Continuously scan for and update outdated or vulnerable third-party components (SCA) and libraries to reduce attack surface.",
+      "data": "[dependency_scan], [patch_management], [bill_of_materials]",
+      "access": "Role_QA_Engineer",
+      "event": "On_Build"
+    },
+    {
+      "id": "OWASP_A07_IDENTIFICATION_FAILURES",
+      "action": "Secure_Authentication",
+      "logic": "Implement robust multi-factor authentication (MFA) and secure identity management to protect user accounts from credential stuffing.",
+      "data": "[mfa_enforced], [session_security], [identity_provider]",
+      "access": "Role_Auth_Manager",
+      "event": "On_User_Session_Creation"
+    },
+    {
+      "id": "OWASP_A08_INTEGRITY_FAILURES",
+      "action": "Verify_Data_Integrity",
+      "logic": "Verify the integrity of software updates, critical data, and CI/CD pipelines through digital signatures and non-repudiation mechanisms.",
+      "data": "[digital_signatures], [hash_verification], [pipeline_integrity]",
+      "access": "Role_DevOps_Engineer",
+      "event": "On_Deployment_Trigger"
+    },
+    {
+      "id": "OWASP_A09_LOGGING_FAILURES",
+      "action": "Monitor_And_Alert",
+      "logic": "Log all critical security events, such as failed authentication attempts and access control failures. Implement real-time alerting to enable rapid incident response.",
+      "data": "[audit_logs], [siem_integration], [incident_alerts]",
+      "access": "Role_SOC_Analyst",
+      "event": "On_Security_Event"
+    },
+    {
+      "id": "OWASP_A10_SSRF",
+      "action": "Restrict_Remote_Req",
+      "logic": "Prevent Screen-Side Request Forgery by implementing allow-lists for network domains and validating all URLs provided by clients.",
+      "data": "[url_allowlist], [network_segregation], [outbound_filtering]",
+      "access": "Role_Network_Engineer",
+      "event": "On_Remote_Request"
+    }
+  ]
+}

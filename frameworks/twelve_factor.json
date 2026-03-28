@@ -1,0 +1,100 @@
+{
+  "Twelve_Factor_App": [
+    {
+      "id": "FACTOR_1_CODEBASE",
+      "action": "Maintain_One_Repo",
+      "logic": "Use one codebase tracked in revision control; many deploys. Each app should reside in a single repository and never share code with other apps (use libraries instead).",
+      "data": "[git_repository], [version_control], [codebase_integrity]",
+      "access": "Role_Developer",
+      "event": "On_Project_Initialization"
+    },
+    {
+      "id": "FACTOR_2_DEPENDENCIES",
+      "action": "Explicit_Expose_Deps",
+      "logic": "Explicitly declare and isolate dependencies. Never rely on the implicit existence of system-wide packages. Use dependency managers (e.g., pip, npm, gems).",
+      "data": "[dependency_manifest], [manifest_file], [isolation_layer]",
+      "access": "Role_DevOps_Engineer",
+      "event": "On_Build"
+    },
+    {
+      "id": "FACTOR_3_CONFIG",
+      "action": "Store_Env_Vars",
+      "logic": "Store configuration in the environment. Separate config and code; use environment variables for resource handles and credentials.",
+      "data": "[environment_variables], [secrets_manager], [dynamic_config]",
+      "access": "Role_System_Admin",
+      "event": "On_Runtime_Init"
+    },
+    {
+      "id": "FACTOR_4_BACKING_SERVICES",
+      "action": "Treat_As_Resources",
+      "logic": "Treat backing services as attached resources. Any service should be swappable by changing the resource handle (e.g., DB switch from local to RDS).",
+      "data": "[resource_handles], [swappable_services], [connection_strings]",
+      "access": "Role_Architect",
+      "event": "On_Infrastructure_Provisioning"
+    },
+    {
+      "id": "FACTOR_5_BUILD_RELEASE_RUN",
+      "action": "Separate_Stages",
+      "logic": "Strictly separate build, release, and run stages. Build turns code into an executable bundle; release combines bundle with config; run executes the release.",
+      "data": "[ci_cd_stages], [immutable_releases], [artifact_storage]",
+      "access": "Role_DevOps_Engineer",
+      "event": "On_Pipeline_Execution"
+    },
+    {
+      "id": "FACTOR_6_PROCESSES",
+      "action": "Execute_Stateless",
+      "logic": "Execute the app as one or more stateless processes. Share nothing; store persistent data in a stateful backing service (e.g., Redis, DB).",
+      "data": "[stateless_logic], [session_externalization], [transient_storage]",
+      "access": "Role_Architect",
+      "event": "On_Process_Design"
+    },
+    {
+      "id": "FACTOR_7_PORT_BINDING",
+      "action": "Export_Services_via_Port",
+      "logic": "Export services via port binding. The app is completely self-contained; do not rely on runtime injection of webservers (e.g., use an internal webserver).",
+      "data": "[self_contained_app], [port_allocation], [http_listening]",
+      "access": "Role_Network_Engineer",
+      "event": "On_Service_Startup"
+    },
+    {
+      "id": "FACTOR_8_CONCURRENCY",
+      "action": "Scale_Via_Process",
+      "logic": "Scale out via the process model. Each process type should be independently scaleable; use workers for background tasks.",
+      "data": "[process_replication], [horizontal_scaling], [load_balancing]",
+      "access": "Role_SRE_Engineer",
+      "event": "On_Scaling_Event"
+    },
+    {
+      "id": "FACTOR_9_DISPOSABILITY",
+      "action": "Maximize_Robustness",
+      "logic": "Maximize robustness with fast startup and graceful shutdown. Processes should start in seconds and shut down cleanly when receiving signals (SIGTERM).",
+      "data": "[graceful_shutdown], [fast_startup], [signal_handling]",
+      "access": "Role_DevOps_Engineer",
+      "event": "On_Process_Termination"
+    },
+    {
+      "id": "FACTOR_10_DEV_PROD_PARITY",
+      "action": "Minimize_Gap",
+      "logic": "Keep development, staging, and production as similar as possible. Use the same backing services and minimize gaps between environments.",
+      "data": "[environment_parity], [infrastructure_as_code], [identical_stacks]",
+      "access": "Role_QA_Engineer",
+      "event": "On_Environment_Setup"
+    },
+    {
+      "id": "FACTOR_11_LOGS",
+      "action": "Treat_As_Streams",
+      "logic": "Treat logs as event streams. Do not write to local files; write to stdout for external aggregation (e.g., ELK, Splunk).",
+      "data": "[log_streaming], [stdout_logging], [event_aggregation]",
+      "access": "Role_Observability_Engineer",
+      "event": "On_Runtime_Logging"
+    },
+    {
+      "id": "FACTOR_12_ADMIN_PROCESSES",
+      "action": "Run_One_Off_Tasks",
+      "logic": "Run admin/management tasks as one-off processes. Run scripts inside the release environment (e.g., database migrations).",
+      "data": "[migration_scripts], [one_off_execution], [admin_tools]",
+      "access": "Role_DB_Admin",
+      "event": "On_Maintenance"
+    }
+  ]
+}

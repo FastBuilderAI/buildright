@@ -1,5 +1,7 @@
 import os
 import json
+import glob
+import xml.etree.ElementTree as ET
 
 try:
     import fastmemory
@@ -9,107 +11,49 @@ except ImportError:
 
 # BuildRight: Universal Coding Health Layer for FastMemory
 # This script generates an ATF (Action-Topology Format) file for FastMemory
-# and processes it using the official fastmemory Python library.
-# It also generates a D3.js force-directed graph for interactive visualization.
+# by dynamically loading framework definitions from the 'frameworks/' directory.
 
-PRINCIPLES = {
-    "Security_OWASP": [
-        {
-            "id": "OWASP_A1_INJECTION",
-            "action": "Prevent_Injection",
-            "logic": "Always use parameterized queries or prepared statements for database, LDAP, and OS command calls. Never concatenate unsanitized user input into executable strings.",
-            "data": "[parameterized_queries], [sql_injection], [prepared_statements]",
-            "access": "Role_Security_Auditor",
-            "event": "On_Database_Query"
-        },
-        {
-            "id": "OWASP_A2_BROKEN_AUTH",
-            "action": "Secure_Authentication",
-            "logic": "Implement secure session management, multi-factor authentication, and robust password hashing (e.g., Argon2, bcrypt). Protect against session hijacking and automated credential stuffing.",
-            "data": "[session_token], [mfa], [password_hashing]",
-            "access": "Role_Auth_Manager",
-            "event": "On_User_Login"
-        },
-        {
-            "id": "OWASP_A3_SENSITIVE_DATA",
-            "action": "Protect_Data",
-            "logic": "Encrypt sensitive data at rest using AES-256 and in transit using TLS 1.3. Avoid storing unnecessary PII and rotate encryption keys periodically.",
-            "data": "[encryption_at_rest], [tls_1.3], [pii]",
-            "access": "Role_Compliance_Officer",
-            "event": "On_Data_Storage"
-        }
-    ],
-    "Architecture_SOLID": [
-        {
-            "id": "SOLID_SRP",
-            "action": "Enforce_SRP",
-            "logic": "Single Responsibility Principle: A class or module should have one, and only one, reason to change. Decouple logic into specialized, focused components.",
-            "data": "[module_decoupling], [focused_classes], [single_responsibility]",
-            "access": "Role_Architect",
-            "event": "On_Component_Design"
-        },
-        {
-            "id": "SOLID_OCP",
-            "action": "Enforce_OCP",
-            "logic": "Open-Closed Principle: Software entities should be open for extension but closed for modification. Use interfaces and polymorphism to allow behavior changes without altering existing code.",
-            "data": "[polymorphism], [interfaces], [extensions]",
-            "access": "Role_Architect",
-            "event": "On_Feature_Expansion"
-        },
-        {
-            "id": "SOLID_DIP",
-            "action": "Enforce_DIP",
-            "logic": "Dependency Inversion Principle: High-level modules should not depend on low-level modules. Both should depend on abstractions. Use dependency injection to manage lifecycle and mockability.",
-            "data": "[dependency_injection], [abstractions], [mocking]",
-            "access": "Role_Architect",
-            "event": "On_Service_Initialization"
-        }
-    ],
-    "Code_Hygiene": [
-        {
-            "id": "PRINCIPLE_DRY",
-            "action": "Avoid_Repetition",
-            "logic": "Don't Repeat Yourself: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system. Use abstractions to consolidate duplicated logic.",
-            "data": "[code_reuse], [abstraction_layer], [authority_source]",
-            "access": "Role_Developer",
-            "event": "On_Code_Review"
-        },
-        {
-            "id": "PRINCIPLE_KISS",
-            "action": "Simplify_Logic",
-            "logic": "Keep It Simple, Stupid: Most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided.",
-            "data": "[simplicity], [minimalism], [no_overengineering]",
-            "access": "Role_Developer",
-            "event": "On_Logic_Implementation"
-        },
-        {
-            "id": "PRINCIPLE_YAGNI",
-            "action": "Defer_Features",
-            "logic": "You Ain't Gonna Need It: Always implement things when you actually need them, never when you just foresee that you may need them. Avoid speculative generality.",
-            "data": "[deferred_execution], [actual_requirements], [no_speculation]",
-            "access": "Role_Developer",
-            "event": "On_Project_Planning"
-        }
-    ],
-    "Clean_Code": [
-        {
-            "id": "CLEAN_NAMES",
-            "action": "Use_Meaningful_Names",
-            "logic": "Variables, functions, and classes should have names that reveal intent. A name should tell you why it exists, what it does, and how it is used.",
-            "data": "[intent_naming], [self_documenting], [readability]",
-            "access": "Role_Developer",
-            "event": "On_Variable_Declaration"
-        },
-        {
-            "id": "CLEAN_FUNCTIONS",
-            "action": "Keep_Functions_Small",
-            "logic": "Functions should be small, should do only one thing, and should do it well. Large functions indicate high cyclomatic complexity and low maintainability.",
-            "data": "[functional_purity], [cyclomatic_complexity], [small_scope]",
-            "access": "Role_Developer",
-            "event": "On_Function_Definition"
-        }
-    ]
-}
+FRAMEWORKS_DIR = "frameworks"
+PRINCIPLES = {}
+
+def load_frameworks():
+    """Load all JSON framework definitions from the frameworks directory."""
+    global PRINCIPLES
+    if not os.path.exists(FRAMEWORKS_DIR):
+        print(f"Warning: Frameworks directory '{FRAMEWORKS_DIR}' not found.")
+        return
+
+    json_files = glob.glob(os.path.join(FRAMEWORKS_DIR, "*.json"))
+    for file_path in json_files:
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                PRINCIPLES.update(data)
+                print(f"Loaded JSON framework: {os.path.basename(file_path)}")
+        except Exception as e:
+            print(f"Error loading JSON {file_path}: {e}")
+
+    xml_files = glob.glob(os.path.join(FRAMEWORKS_DIR, "*.xml"))
+    for file_path in xml_files:
+        try:
+            tree = ET.parse(file_path)
+            root = tree.getroot()
+            framework_name = root.attrib.get('name', os.path.basename(file_path))
+            framework_rules = []
+            for p in root.findall('principle'):
+                rule = {
+                    "id": p.attrib.get('id', 'UNKNOWN'),
+                    "action": p.find('action').text if p.find('action') is not None else "",
+                    "logic": p.find('logic').text if p.find('logic') is not None else "",
+                    "data": p.find('data').text if p.find('data') is not None else "",
+                    "access": p.find('access').text if p.find('access') is not None else "",
+                    "event": p.find('event').text if p.find('event') is not None else ""
+                }
+                framework_rules.append(rule)
+            PRINCIPLES[framework_name] = framework_rules
+            print(f"Loaded XML framework: {os.path.basename(file_path)}")
+        except Exception as e:
+            print(f"Error loading XML {file_path}: {e}")
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html>
@@ -138,7 +82,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
     <div class="header">
-        <h2>🛡️ BuildRight: Engineering Health Graph</h2>
+        <h2>🛡️ BuildRight: Global Engineering Health Graph</h2>
         <p>Interactive CBFDAE Ontological Memory clustered by FastMemory Louvain engine.</p>
     </div>
     
@@ -260,7 +204,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 .join("text")
                 .attr("class", "label")
                 .attr("text-anchor", "middle")
-                .text(d => d.isBlock ? d.name : d.id.replace('PRINCIPLE_', ''));
+                .text(d => d.isBlock ? d.name : d.id.split('_').slice(-1)[0]);
 
             const tooltip = d3.select("#tooltip");
 
@@ -309,19 +253,26 @@ def main():
     js_file = "buildright.js"
     html_file = "index.html"
     
+    # 0. Load External Frameworks
+    load_frameworks()
+    
+    if not PRINCIPLES:
+        print("Error: No principles loaded. Please check the 'frameworks/' directory.")
+        return
+
     # 1. Generate core ATF text
     atf_content = generate_buildright_atf()
     with open(atf_file, "w") as f:
         f.write(atf_content)
-    print(f"Successfully generated BuildRight ATF text at: {atf_file}")
+    print(f"Successfully generated BuildRight ATF text ({len(atf_content)} chars) at: {atf_file}")
 
     # 2. Build Memory Graph
-    print("Building Ontological Memory Graph using 'fastmemory' lib...")
+    print("Building Global Ontological Memory Graph using 'fastmemory' lib...")
     try:
         cbfdae_json_graph = fastmemory.process_markdown(atf_content)
         with open(json_file, "w") as f:
             f.write(cbfdae_json_graph)
-        print(f"Successfully clustered memory graph into: {json_file}")
+        print(f"Successfully clustered unified memory graph into: {json_file}")
         
         # 3. Generate UI Data Bridge
         with open(js_file, "w") as f:
@@ -331,7 +282,7 @@ def main():
         # 4. Generate Interactive Dashboard
         with open(html_file, "w") as f:
             f.write(HTML_TEMPLATE)
-        print(f"Successfully generated D3.js dashboard: {html_file}")
+        print(f"Successfully generated Global D3.js dashboard: {html_file}")
         
     except Exception as e:
         print(f"FastMemory engine error: {e}")

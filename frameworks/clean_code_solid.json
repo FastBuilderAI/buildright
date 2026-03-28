@@ -1,0 +1,84 @@
+{
+  "Clean_Code_SOLID": [
+    {
+      "id": "SOLID_SRP",
+      "action": "Enforce_SRP",
+      "logic": "Single Responsibility Principle: A class should have one reason to change. Decouple logic into specialized components.",
+      "data": "[module_decoupling], [focused_classes], [single_responsibility]",
+      "access": "Role_Architect",
+      "event": "On_Design"
+    },
+    {
+      "id": "SOLID_OCP",
+      "action": "Enforce_OCP",
+      "logic": "Open-Closed Principle: Open for extension, closed for modification. Use interfaces and abstraction layers.",
+      "data": "[polymorphism], [interfaces], [extensions]",
+      "access": "Role_Architect",
+      "event": "On_Expansion"
+    },
+    {
+      "id": "SOLID_LSP",
+      "action": "Enforce_LSP",
+      "logic": "Liskov Substitution Principle: Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.",
+      "data": "[inheritance_integrity], [interface_compliance], [contract_trust]",
+      "access": "Role_Architect",
+      "event": "On_Subclass_Creation"
+    },
+    {
+      "id": "SOLID_ISP",
+      "action": "Enforce_ISP",
+      "logic": "Interface Segregation Principle: No client should be forced to depend on methods it does not use. Clients should not be forced to implement interfaces they don't use.",
+      "data": "[fine_grained_interfaces], [client_focus], [no_fat_interfaces]",
+      "access": "Role_Architect",
+      "event": "On_API_Definition"
+    },
+    {
+      "id": "SOLID_DIP",
+      "action": "Enforce_DIP",
+      "logic": "Dependency Inversion Principle: Depend on abstractions, not concretions. Use dependency injection repositories.",
+      "data": "[abstractions], [dependency_injection], [inversion_control]",
+      "access": "Role_Architect",
+      "event": "On_Service_Init"
+    },
+    {
+      "id": "CLEAN_DRY",
+      "action": "Avoid_Repetition",
+      "logic": "Don't Repeat Yourself: Eliminate code duplication. Consolidation of logic ensures a single source of truth.",
+      "data": "[code_reuse], [abstraction], [authority_source]",
+      "access": "Role_Developer",
+      "event": "On_Review"
+    },
+    {
+      "id": "CLEAN_KISS",
+      "action": "Simplify_Complexity",
+      "logic": "Keep It Simple, Stupid: Avoid over-engineering. Simplicity is the ultimate sophistication in software engineering.",
+      "data": "[simplicity], [minimalism], [logic_purity]",
+      "access": "Role_Developer",
+      "event": "On_Review"
+    },
+    {
+      "id": "CLEAN_YAGNI",
+      "action": "Defer_Over_Engineering",
+      "logic": "You Ain't Gonna Need It: Implement features only when needed, not when you foresee needing them. Focus on current requirements.",
+      "data": "[deferred_logic], [actual_needs], [minimal_set]",
+      "access": "Role_Developer",
+      "event": "On_Planning"
+    },
+    {
+      "id": "CLEAN_BOY_SCOUT",
+      "action": "Leave_Better_Code",
+      "logic": "Leave the code cleaner than you found it. Refactor continuously as you work on features to prevent technical debt accumulation.",
+      "data": "[refactoring], [debt_reduction], [constant_improvement]",
+      "access": "Role_Developer",
+      "event": "On_Modification"
+    },
+    {
+      "id": "CLEAN_MEANINGFUL_NAMES",
+      "action": "Use_Self_Documenting_Names",
+      "logic": "Names should be descriptive and unambiguous. Avoid short, cryptic labels; prefer readable, intent-revealing names.",
+      "data": "[descriptive_naming], [intent_logic], [readability]",
+      "access": "Role_Developer",
+      "event": "On_Variable_Init"
+    }
+  ]
+}

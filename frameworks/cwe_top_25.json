@@ -1,0 +1,84 @@
+{
+  "CWE_Top_25_Key": [
+    {
+      "id": "CWE_78_OS_COMMAND_INJECTION",
+      "action": "Avoid_Shell_Commands",
+      "logic": "The software constructs all or part of an OS command using externally-influenced input, but it does not neutralize or incorrectly neutralizes special elements.",
+      "data": "[parameterized_os_calls], [no_shell_true], [input_sanitization]",
+      "access": "Role_Security_Auditor",
+      "event": "On_OS_Command"
+    },
+    {
+      "id": "CWE_79_XSS",
+      "action": "Output_Encoding",
+      "logic": "The software does not neutralize or incorrectly neutralizes user-controllable input before it is placed in output that is used as a web page that is served to other users.",
+      "data": "[html_encoding], [content_security_policy], [js_escaping]",
+      "access": "Role_Security_Officer",
+      "event": "On_Web_Render"
+    },
+    {
+      "id": "CWE_89_SQL_INJECTION",
+      "action": "Use_Prepared_Statements",
+      "logic": "The software constructs all or part of an SQL command using externally-influenced input, but it does not neutralize or incorrectly neutralizes special elements.",
+      "data": "[parameterized_queries], [prepared_statements], [orm_security]",
+      "access": "Role_DB_Security",
+      "event": "On_Database_Call"
+    },
+    {
+      "id": "CWE_125_OUT_OF_BOUNDS_READ",
+      "action": "Check_Index_Bounds",
+      "logic": "The software reads data past the end, or before the beginning, of the intended buffer. This can allow attackers to read sensitive information or cause a crash.",
+      "data": "[bounds_check], [safe_iterators], [buffer_management]",
+      "access": "Role_C_Developer",
+      "event": "On_Memory_Access"
+    },
+    {
+      "id": "CWE_190_INTEGER_OVERFLOW",
+      "action": "Use_Safe_Arithmetic",
+      "logic": "The software performs a calculation that can produce an integer overflow or wraparound, when the logic expects a smaller value.",
+      "data": "[unsigned_safeguards], [range_checks], [overflow_logic]",
+      "access": "Role_Security_Auditor",
+      "event": "On_Math_Operation"
+    },
+    {
+      "id": "CWE_200_INFO_EXPOSURE",
+      "action": "Mask_Sensitive_Info",
+      "logic": "Avoid intentional or unintentional exposure of sensitive information to an unauthorized actor via error messages or logs.",
+      "data": "[no_stack_trace_in_prod], [masked_logs], [generic_error_msgs]",
+      "access": "Role_Security_Officer",
+      "event": "On_Error_Response"
+    },
+    {
+      "id": "CWE_287_IMPROPER_AUTH",
+      "action": "Enforce_Strong_Auth",
+      "logic": "The software does not perform or incorrectly performs an authentication check when an actor attempts to access a resource.",
+      "data": "[multi_factor_auth], [session_integrity], [secure_identity]",
+      "access": "Role_Auth_Manager",
+      "event": "On_Auth_Challenge"
+    },
+    {
+      "id": "CWE_416_USE_AFTER_FREE",
+      "action": "Manage_Memory_Lifecycle",
+      "logic": "Referencing memory after it has been freed can lead to arbitrary code execution or a crash. Ensure pointers are nullified after free.",
+      "data": "[nullify_pointers], [smart_pointers], [raii]",
+      "access": "Role_Lower_Level_Dev",
+      "event": "On_Memory_Free"
+    },
+    {
+      "id": "CWE_502_DESERIALIZATION",
+      "action": "Restrict_Untrusted_Data",
+      "logic": "The application deserializes untrusted data without sufficiently verifying that the resulting data will be valid.",
+      "data": "[safe_deserializers], [no_pickle_untrusted], [signature_checks]",
+      "access": "Role_Security_Auditor",
+      "event": "On_Data_Ingest"
+    },
+    {
+      "id": "CWE_862_MISSING_AUTH",
+      "action": "Deny_By_Default",
+      "logic": "The software does not perform an authorization check when an actor attempts to access a resource or perform an action.",
+      "data": "[access_control_matrix], [authorization_check], [policy_engine]",
+      "access": "Role_Security_Officer",
+      "event": "On_Action_Invocation"
+    }
+  ]
+}

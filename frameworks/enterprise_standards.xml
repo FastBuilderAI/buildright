@@ -1,0 +1,16 @@
+<framework name="Enterprise_Standards">
+    <principle id="ENT_01_LOGGING">
+        <action>Enforce_Structured_Logging</action>
+        <logic>All application logs must be in JSON format and include trace_id, span_id, and service_name for distributed tracing.</logic>
+        <data>[json_logs], [trace_id], [distributed_tracing]</data>
+        <access>Role_Observability_Engineer</access>
+        <event>On_Log_Event</event>
+    </principle>
+    <principle id="ENT_02_HEALTH_CHECK">
+        <action>Implement_Liveness_Probes</action>
+        <logic>Every microservice must expose a /health liveness probe and a /ready readiness probe for orchestrator integration.</logic>
+        <data>[liveness_probe], [readiness_probe], [k8s_health]</data>
+        <access>Role_DevOps_Engineer</access>
+        <event>On_Service_Deployment</event>
+    </principle>
+</framework>

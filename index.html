@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="header">
-        <h2>🛡️ BuildRight: Engineering Health Graph</h2>
+        <h2>🛡️ BuildRight: Global Engineering Health Graph</h2>
         <p>Interactive CBFDAE Ontological Memory clustered by FastMemory Louvain engine.</p>
     </div>
     
@@ -147,7 +147,7 @@
                 .join("text")
                 .attr("class", "label")
                 .attr("text-anchor", "middle")
-                .text(d => d.isBlock ? d.name : d.id.replace('PRINCIPLE_', ''));
+                .text(d => d.isBlock ? d.name : d.id.split('_').slice(-1)[0]);
 
             const tooltip = d3.select("#tooltip");
 
