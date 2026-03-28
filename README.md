@@ -11,6 +11,8 @@
 
 ## 📽️ Ontological Architecture
 
+![BuildRight Ontological Memory: Tight Compressed Engineering Health Graph](assets/v2_memory_graph.png)
+
 ```mermaid
 graph TD
     A[Raw Standards: JSON/XML] --> B(BuildRight Generator)
@@ -73,6 +75,13 @@ For developers using the **Claude Code** terminal interface, BuildRight can be i
 
 # Then install the plugin
 /plugin install buildright
+```
+
+### Option D: Cursor (via Plugin Marketplace)
+In **Cursor Agent** chat, install directly from the marketplace:
+
+```bash
+/add-plugin buildright
 ```
 
 ---
