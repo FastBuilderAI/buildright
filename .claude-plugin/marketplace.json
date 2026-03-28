@@ -1,0 +1,17 @@
+{
+  "name": "buildright",
+  "version": "1.0.0",
+  "description": "The 'Horizontal Layer of Truth' for AI Engineering. Enforces OWASP, SOLID, and Clean Code standards via ontological memory.",
+  "author": "FastBuilder AI",
+  "repository": "https://github.com/FastBuilderAI/buildright",
+  "mcpServers": [
+    {
+      "name": "buildright",
+      "command": "python3",
+      "args": ["{{REPODIR}}/mcp_server.py"],
+      "env": {}
+    }
+  ],
+  "frameworks": ["OWASP", "SOLID", "Twelve-Factor", "CWE"],
+  "homepage": "https://github.com/FastBuilderAI/buildright"
+}

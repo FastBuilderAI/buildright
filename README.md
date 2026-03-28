@@ -65,14 +65,14 @@ python3 mcp_server.py
 Upload **`claude_plugin.md`** and **`buildright.md`** to your Claude Project Knowledge base to establish it as the source of truth for all generations.
 
 ### Option C: Claude Code (CLI)
-For developers using the **Claude Code** terminal interface, BuildRight can be added as an official MCP plugin:
+For developers using the **Claude Code** terminal interface, BuildRight can be installed by adding the official marketplace definition:
 
 ```bash
 # In your terminal (with Claude Code running)
-/plugin install buildright
+/plugin marketplace add https://raw.githubusercontent.com/FastBuilderAI/buildright/main/.claude-plugin/marketplace.json
 
-# Or add it as a project-level MCP server
-claude mcp add buildright python3 $(pwd)/mcp_server.py
+# Then install the plugin
+/plugin install buildright
 ```
 
 ---
