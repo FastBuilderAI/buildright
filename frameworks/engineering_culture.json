@@ -1,0 +1,158 @@
+{
+    "Engineering_Culture_Agile": [
+        {
+            "id": "AGILE_CORE_01",
+            "action": "Initialize Agile Architecture",
+            "logic": "Follow the official Agile design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "AGILE_SEC_01",
+            "action": "Enforce Agile Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Agile identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "AGILE_PERF_01",
+            "action": "Optimize Agile Compute",
+            "logic": "Implement caching and lazy loading specific to Agile to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Engineering_Culture_Scrum": [
+        {
+            "id": "SCRUM_CORE_01",
+            "action": "Initialize Scrum Architecture",
+            "logic": "Follow the official Scrum design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SCRUM_SEC_01",
+            "action": "Enforce Scrum Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Scrum identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SCRUM_PERF_01",
+            "action": "Optimize Scrum Compute",
+            "logic": "Implement caching and lazy loading specific to Scrum to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Engineering_Culture_Kanban": [
+        {
+            "id": "KANBAN_CORE_01",
+            "action": "Initialize Kanban Architecture",
+            "logic": "Follow the official Kanban design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "KANBAN_SEC_01",
+            "action": "Enforce Kanban Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Kanban identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "KANBAN_PERF_01",
+            "action": "Optimize Kanban Compute",
+            "logic": "Implement caching and lazy loading specific to Kanban to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Engineering_Culture_DevSecOps": [
+        {
+            "id": "DEVSECOPS_CORE_01",
+            "action": "Initialize DevSecOps Architecture",
+            "logic": "Follow the official DevSecOps design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "DEVSECOPS_SEC_01",
+            "action": "Enforce DevSecOps Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via DevSecOps identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "DEVSECOPS_PERF_01",
+            "action": "Optimize DevSecOps Compute",
+            "logic": "Implement caching and lazy loading specific to DevSecOps to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Engineering_Culture_SRE": [
+        {
+            "id": "SRE_CORE_01",
+            "action": "Initialize SRE Architecture",
+            "logic": "Follow the official SRE design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SRE_SEC_01",
+            "action": "Enforce SRE Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via SRE identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SRE_PERF_01",
+            "action": "Optimize SRE Compute",
+            "logic": "Implement caching and lazy loading specific to SRE to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Engineering_Culture_FinOps": [
+        {
+            "id": "FINOPS_CORE_01",
+            "action": "Initialize FinOps Architecture",
+            "logic": "Follow the official FinOps design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "FINOPS_SEC_01",
+            "action": "Enforce FinOps Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via FinOps identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "FINOPS_PERF_01",
+            "action": "Optimize FinOps Compute",
+            "logic": "Implement caching and lazy loading specific to FinOps to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

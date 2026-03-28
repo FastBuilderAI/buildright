@@ -1,0 +1,132 @@
+{
+    "Backend_Rust_Actix": [
+        {
+            "id": "ACTIX_CORE_01",
+            "action": "Initialize Actix Architecture",
+            "logic": "Follow the official Actix design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ACTIX_SEC_01",
+            "action": "Enforce Actix Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Actix identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ACTIX_PERF_01",
+            "action": "Optimize Actix Compute",
+            "logic": "Implement caching and lazy loading specific to Actix to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Rust_Axum": [
+        {
+            "id": "AXUM_CORE_01",
+            "action": "Initialize Axum Architecture",
+            "logic": "Follow the official Axum design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "AXUM_SEC_01",
+            "action": "Enforce Axum Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Axum identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "AXUM_PERF_01",
+            "action": "Optimize Axum Compute",
+            "logic": "Implement caching and lazy loading specific to Axum to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Rust_Rocket": [
+        {
+            "id": "ROCKET_CORE_01",
+            "action": "Initialize Rocket Architecture",
+            "logic": "Follow the official Rocket design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ROCKET_SEC_01",
+            "action": "Enforce Rocket Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Rocket identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ROCKET_PERF_01",
+            "action": "Optimize Rocket Compute",
+            "logic": "Implement caching and lazy loading specific to Rocket to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Rust_Warp": [
+        {
+            "id": "WARP_CORE_01",
+            "action": "Initialize Warp Architecture",
+            "logic": "Follow the official Warp design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "WARP_SEC_01",
+            "action": "Enforce Warp Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Warp identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "WARP_PERF_01",
+            "action": "Optimize Warp Compute",
+            "logic": "Implement caching and lazy loading specific to Warp to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Rust_Poem": [
+        {
+            "id": "POEM_CORE_01",
+            "action": "Initialize Poem Architecture",
+            "logic": "Follow the official Poem design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "POEM_SEC_01",
+            "action": "Enforce Poem Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Poem identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "POEM_PERF_01",
+            "action": "Optimize Poem Compute",
+            "logic": "Implement caching and lazy loading specific to Poem to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

@@ -1,0 +1,132 @@
+{
+    "Backend_Node_Express": [
+        {
+            "id": "EXPRESS_CORE_01",
+            "action": "Initialize Express Architecture",
+            "logic": "Follow the official Express design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "EXPRESS_SEC_01",
+            "action": "Enforce Express Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Express identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "EXPRESS_PERF_01",
+            "action": "Optimize Express Compute",
+            "logic": "Implement caching and lazy loading specific to Express to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Node_NestJS": [
+        {
+            "id": "NESTJS_CORE_01",
+            "action": "Initialize NestJS Architecture",
+            "logic": "Follow the official NestJS design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "NESTJS_SEC_01",
+            "action": "Enforce NestJS Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via NestJS identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "NESTJS_PERF_01",
+            "action": "Optimize NestJS Compute",
+            "logic": "Implement caching and lazy loading specific to NestJS to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Node_Koa": [
+        {
+            "id": "KOA_CORE_01",
+            "action": "Initialize Koa Architecture",
+            "logic": "Follow the official Koa design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "KOA_SEC_01",
+            "action": "Enforce Koa Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Koa identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "KOA_PERF_01",
+            "action": "Optimize Koa Compute",
+            "logic": "Implement caching and lazy loading specific to Koa to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Node_Fastify": [
+        {
+            "id": "FASTIFY_CORE_01",
+            "action": "Initialize Fastify Architecture",
+            "logic": "Follow the official Fastify design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "FASTIFY_SEC_01",
+            "action": "Enforce Fastify Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Fastify identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "FASTIFY_PERF_01",
+            "action": "Optimize Fastify Compute",
+            "logic": "Implement caching and lazy loading specific to Fastify to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Node_AdonisJS": [
+        {
+            "id": "ADONISJS_CORE_01",
+            "action": "Initialize AdonisJS Architecture",
+            "logic": "Follow the official AdonisJS design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ADONISJS_SEC_01",
+            "action": "Enforce AdonisJS Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via AdonisJS identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ADONISJS_PERF_01",
+            "action": "Optimize AdonisJS Compute",
+            "logic": "Implement caching and lazy loading specific to AdonisJS to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

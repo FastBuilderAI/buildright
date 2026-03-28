@@ -242,7 +242,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             }
 
             function labelVisible(d) {
-                return d.y1 <= 3 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.03;
+                // Only show labels for depth 1 (Categories) if they are wide enough
+                // and depth 2 (Frameworks) if they are zoomed into.
+                return d.y1 <= 2 && d.y0 >= 1 && (d.y1 - d.y0) * (d.x1 - d.x0) > 0.05;
             }
 
             function labelTransform(d) {

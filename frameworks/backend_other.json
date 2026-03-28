@@ -1,0 +1,158 @@
+{
+    "Backend_Other_Laravel": [
+        {
+            "id": "LARAVEL_CORE_01",
+            "action": "Initialize Laravel Architecture",
+            "logic": "Follow the official Laravel design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "LARAVEL_SEC_01",
+            "action": "Enforce Laravel Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Laravel identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "LARAVEL_PERF_01",
+            "action": "Optimize Laravel Compute",
+            "logic": "Implement caching and lazy loading specific to Laravel to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Other_Symfony": [
+        {
+            "id": "SYMFONY_CORE_01",
+            "action": "Initialize Symfony Architecture",
+            "logic": "Follow the official Symfony design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SYMFONY_SEC_01",
+            "action": "Enforce Symfony Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Symfony identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SYMFONY_PERF_01",
+            "action": "Optimize Symfony Compute",
+            "logic": "Implement caching and lazy loading specific to Symfony to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Other_Rails": [
+        {
+            "id": "RAILS_CORE_01",
+            "action": "Initialize Rails Architecture",
+            "logic": "Follow the official Rails design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "RAILS_SEC_01",
+            "action": "Enforce Rails Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Rails identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "RAILS_PERF_01",
+            "action": "Optimize Rails Compute",
+            "logic": "Implement caching and lazy loading specific to Rails to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Other_Phoenix": [
+        {
+            "id": "PHOENIX_CORE_01",
+            "action": "Initialize Phoenix Architecture",
+            "logic": "Follow the official Phoenix design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "PHOENIX_SEC_01",
+            "action": "Enforce Phoenix Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Phoenix identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "PHOENIX_PERF_01",
+            "action": "Optimize Phoenix Compute",
+            "logic": "Implement caching and lazy loading specific to Phoenix to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Other_DotNet_Core": [
+        {
+            "id": "DOTNET_CORE_CORE_01",
+            "action": "Initialize DotNet Core Architecture",
+            "logic": "Follow the official DotNet Core design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "DOTNET_CORE_SEC_01",
+            "action": "Enforce DotNet Core Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via DotNet Core identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "DOTNET_CORE_PERF_01",
+            "action": "Optimize DotNet Core Compute",
+            "logic": "Implement caching and lazy loading specific to DotNet Core to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Other_Aspnet": [
+        {
+            "id": "ASPNET_CORE_01",
+            "action": "Initialize Aspnet Architecture",
+            "logic": "Follow the official Aspnet design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ASPNET_SEC_01",
+            "action": "Enforce Aspnet Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Aspnet identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ASPNET_PERF_01",
+            "action": "Optimize Aspnet Compute",
+            "logic": "Implement caching and lazy loading specific to Aspnet to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

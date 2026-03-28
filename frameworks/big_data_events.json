@@ -1,0 +1,210 @@
+{
+    "Big_Data_Events_Kafka": [
+        {
+            "id": "KAFKA_CORE_01",
+            "action": "Initialize Kafka Architecture",
+            "logic": "Follow the official Kafka design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "KAFKA_SEC_01",
+            "action": "Enforce Kafka Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Kafka identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "KAFKA_PERF_01",
+            "action": "Optimize Kafka Compute",
+            "logic": "Implement caching and lazy loading specific to Kafka to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Spark": [
+        {
+            "id": "SPARK_CORE_01",
+            "action": "Initialize Spark Architecture",
+            "logic": "Follow the official Spark design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SPARK_SEC_01",
+            "action": "Enforce Spark Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Spark identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SPARK_PERF_01",
+            "action": "Optimize Spark Compute",
+            "logic": "Implement caching and lazy loading specific to Spark to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Flink": [
+        {
+            "id": "FLINK_CORE_01",
+            "action": "Initialize Flink Architecture",
+            "logic": "Follow the official Flink design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "FLINK_SEC_01",
+            "action": "Enforce Flink Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Flink identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "FLINK_PERF_01",
+            "action": "Optimize Flink Compute",
+            "logic": "Implement caching and lazy loading specific to Flink to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Hadoop": [
+        {
+            "id": "HADOOP_CORE_01",
+            "action": "Initialize Hadoop Architecture",
+            "logic": "Follow the official Hadoop design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "HADOOP_SEC_01",
+            "action": "Enforce Hadoop Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Hadoop identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "HADOOP_PERF_01",
+            "action": "Optimize Hadoop Compute",
+            "logic": "Implement caching and lazy loading specific to Hadoop to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_RabbitMQ": [
+        {
+            "id": "RABBITMQ_CORE_01",
+            "action": "Initialize RabbitMQ Architecture",
+            "logic": "Follow the official RabbitMQ design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "RABBITMQ_SEC_01",
+            "action": "Enforce RabbitMQ Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via RabbitMQ identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "RABBITMQ_PERF_01",
+            "action": "Optimize RabbitMQ Compute",
+            "logic": "Implement caching and lazy loading specific to RabbitMQ to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Celery": [
+        {
+            "id": "CELERY_CORE_01",
+            "action": "Initialize Celery Architecture",
+            "logic": "Follow the official Celery design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "CELERY_SEC_01",
+            "action": "Enforce Celery Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Celery identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "CELERY_PERF_01",
+            "action": "Optimize Celery Compute",
+            "logic": "Implement caching and lazy loading specific to Celery to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Airflow": [
+        {
+            "id": "AIRFLOW_CORE_01",
+            "action": "Initialize Airflow Architecture",
+            "logic": "Follow the official Airflow design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "AIRFLOW_SEC_01",
+            "action": "Enforce Airflow Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Airflow identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "AIRFLOW_PERF_01",
+            "action": "Optimize Airflow Compute",
+            "logic": "Implement caching and lazy loading specific to Airflow to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Big_Data_Events_Dagster": [
+        {
+            "id": "DAGSTER_CORE_01",
+            "action": "Initialize Dagster Architecture",
+            "logic": "Follow the official Dagster design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "DAGSTER_SEC_01",
+            "action": "Enforce Dagster Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Dagster identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "DAGSTER_PERF_01",
+            "action": "Optimize Dagster Compute",
+            "logic": "Implement caching and lazy loading specific to Dagster to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

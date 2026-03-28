@@ -1,0 +1,314 @@
+{
+    "Cloud_Infra_AWS": [
+        {
+            "id": "AWS_CORE_01",
+            "action": "Initialize AWS Architecture",
+            "logic": "Follow the official AWS design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "AWS_SEC_01",
+            "action": "Enforce AWS Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via AWS identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "AWS_PERF_01",
+            "action": "Optimize AWS Compute",
+            "logic": "Implement caching and lazy loading specific to AWS to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Azure": [
+        {
+            "id": "AZURE_CORE_01",
+            "action": "Initialize Azure Architecture",
+            "logic": "Follow the official Azure design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "AZURE_SEC_01",
+            "action": "Enforce Azure Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Azure identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "AZURE_PERF_01",
+            "action": "Optimize Azure Compute",
+            "logic": "Implement caching and lazy loading specific to Azure to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_GCP": [
+        {
+            "id": "GCP_CORE_01",
+            "action": "Initialize GCP Architecture",
+            "logic": "Follow the official GCP design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "GCP_SEC_01",
+            "action": "Enforce GCP Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via GCP identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "GCP_PERF_01",
+            "action": "Optimize GCP Compute",
+            "logic": "Implement caching and lazy loading specific to GCP to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Kubernetes": [
+        {
+            "id": "KUBERNETES_CORE_01",
+            "action": "Initialize Kubernetes Architecture",
+            "logic": "Follow the official Kubernetes design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "KUBERNETES_SEC_01",
+            "action": "Enforce Kubernetes Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Kubernetes identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "KUBERNETES_PERF_01",
+            "action": "Optimize Kubernetes Compute",
+            "logic": "Implement caching and lazy loading specific to Kubernetes to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Docker": [
+        {
+            "id": "DOCKER_CORE_01",
+            "action": "Initialize Docker Architecture",
+            "logic": "Follow the official Docker design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "DOCKER_SEC_01",
+            "action": "Enforce Docker Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Docker identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "DOCKER_PERF_01",
+            "action": "Optimize Docker Compute",
+            "logic": "Implement caching and lazy loading specific to Docker to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Terraform": [
+        {
+            "id": "TERRAFORM_CORE_01",
+            "action": "Initialize Terraform Architecture",
+            "logic": "Follow the official Terraform design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "TERRAFORM_SEC_01",
+            "action": "Enforce Terraform Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Terraform identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "TERRAFORM_PERF_01",
+            "action": "Optimize Terraform Compute",
+            "logic": "Implement caching and lazy loading specific to Terraform to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Helm": [
+        {
+            "id": "HELM_CORE_01",
+            "action": "Initialize Helm Architecture",
+            "logic": "Follow the official Helm design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "HELM_SEC_01",
+            "action": "Enforce Helm Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Helm identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "HELM_PERF_01",
+            "action": "Optimize Helm Compute",
+            "logic": "Implement caching and lazy loading specific to Helm to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Ansible": [
+        {
+            "id": "ANSIBLE_CORE_01",
+            "action": "Initialize Ansible Architecture",
+            "logic": "Follow the official Ansible design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ANSIBLE_SEC_01",
+            "action": "Enforce Ansible Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Ansible identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ANSIBLE_PERF_01",
+            "action": "Optimize Ansible Compute",
+            "logic": "Implement caching and lazy loading specific to Ansible to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Pulumi": [
+        {
+            "id": "PULUMI_CORE_01",
+            "action": "Initialize Pulumi Architecture",
+            "logic": "Follow the official Pulumi design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "PULUMI_SEC_01",
+            "action": "Enforce Pulumi Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Pulumi identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "PULUMI_PERF_01",
+            "action": "Optimize Pulumi Compute",
+            "logic": "Implement caching and lazy loading specific to Pulumi to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_Serverless": [
+        {
+            "id": "SERVERLESS_CORE_01",
+            "action": "Initialize Serverless Architecture",
+            "logic": "Follow the official Serverless design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SERVERLESS_SEC_01",
+            "action": "Enforce Serverless Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Serverless identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SERVERLESS_PERF_01",
+            "action": "Optimize Serverless Compute",
+            "logic": "Implement caching and lazy loading specific to Serverless to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_OpenStack": [
+        {
+            "id": "OPENSTACK_CORE_01",
+            "action": "Initialize OpenStack Architecture",
+            "logic": "Follow the official OpenStack design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "OPENSTACK_SEC_01",
+            "action": "Enforce OpenStack Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via OpenStack identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "OPENSTACK_PERF_01",
+            "action": "Optimize OpenStack Compute",
+            "logic": "Implement caching and lazy loading specific to OpenStack to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Cloud_Infra_CloudFoundry": [
+        {
+            "id": "CLOUDFOUNDRY_CORE_01",
+            "action": "Initialize CloudFoundry Architecture",
+            "logic": "Follow the official CloudFoundry design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "CLOUDFOUNDRY_SEC_01",
+            "action": "Enforce CloudFoundry Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via CloudFoundry identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "CLOUDFOUNDRY_PERF_01",
+            "action": "Optimize CloudFoundry Compute",
+            "logic": "Implement caching and lazy loading specific to CloudFoundry to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

@@ -1,0 +1,236 @@
+{
+    "AI_ML_PyTorch": [
+        {
+            "id": "PYTORCH_CORE_01",
+            "action": "Initialize PyTorch Architecture",
+            "logic": "Follow the official PyTorch design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "PYTORCH_SEC_01",
+            "action": "Enforce PyTorch Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via PyTorch identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "PYTORCH_PERF_01",
+            "action": "Optimize PyTorch Compute",
+            "logic": "Implement caching and lazy loading specific to PyTorch to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_TensorFlow": [
+        {
+            "id": "TENSORFLOW_CORE_01",
+            "action": "Initialize TensorFlow Architecture",
+            "logic": "Follow the official TensorFlow design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "TENSORFLOW_SEC_01",
+            "action": "Enforce TensorFlow Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via TensorFlow identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "TENSORFLOW_PERF_01",
+            "action": "Optimize TensorFlow Compute",
+            "logic": "Implement caching and lazy loading specific to TensorFlow to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_ScikitLearn": [
+        {
+            "id": "SCIKITLEARN_CORE_01",
+            "action": "Initialize ScikitLearn Architecture",
+            "logic": "Follow the official ScikitLearn design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SCIKITLEARN_SEC_01",
+            "action": "Enforce ScikitLearn Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via ScikitLearn identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SCIKITLEARN_PERF_01",
+            "action": "Optimize ScikitLearn Compute",
+            "logic": "Implement caching and lazy loading specific to ScikitLearn to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_LangChain": [
+        {
+            "id": "LANGCHAIN_CORE_01",
+            "action": "Initialize LangChain Architecture",
+            "logic": "Follow the official LangChain design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "LANGCHAIN_SEC_01",
+            "action": "Enforce LangChain Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via LangChain identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "LANGCHAIN_PERF_01",
+            "action": "Optimize LangChain Compute",
+            "logic": "Implement caching and lazy loading specific to LangChain to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_OpenAI_API": [
+        {
+            "id": "OPENAI_API_CORE_01",
+            "action": "Initialize OpenAI API Architecture",
+            "logic": "Follow the official OpenAI API design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "OPENAI_API_SEC_01",
+            "action": "Enforce OpenAI API Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via OpenAI API identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "OPENAI_API_PERF_01",
+            "action": "Optimize OpenAI API Compute",
+            "logic": "Implement caching and lazy loading specific to OpenAI API to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_HuggingFace": [
+        {
+            "id": "HUGGINGFACE_CORE_01",
+            "action": "Initialize HuggingFace Architecture",
+            "logic": "Follow the official HuggingFace design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "HUGGINGFACE_SEC_01",
+            "action": "Enforce HuggingFace Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via HuggingFace identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "HUGGINGFACE_PERF_01",
+            "action": "Optimize HuggingFace Compute",
+            "logic": "Implement caching and lazy loading specific to HuggingFace to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_Anthropic": [
+        {
+            "id": "ANTHROPIC_CORE_01",
+            "action": "Initialize Anthropic Architecture",
+            "logic": "Follow the official Anthropic design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "ANTHROPIC_SEC_01",
+            "action": "Enforce Anthropic Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Anthropic identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "ANTHROPIC_PERF_01",
+            "action": "Optimize Anthropic Compute",
+            "logic": "Implement caching and lazy loading specific to Anthropic to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_Haystack": [
+        {
+            "id": "HAYSTACK_CORE_01",
+            "action": "Initialize Haystack Architecture",
+            "logic": "Follow the official Haystack design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "HAYSTACK_SEC_01",
+            "action": "Enforce Haystack Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Haystack identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "HAYSTACK_PERF_01",
+            "action": "Optimize Haystack Compute",
+            "logic": "Implement caching and lazy loading specific to Haystack to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "AI_ML_LlamaIndex": [
+        {
+            "id": "LLAMAINDEX_CORE_01",
+            "action": "Initialize LlamaIndex Architecture",
+            "logic": "Follow the official LlamaIndex design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "LLAMAINDEX_SEC_01",
+            "action": "Enforce LlamaIndex Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via LlamaIndex identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "LLAMAINDEX_PERF_01",
+            "action": "Optimize LlamaIndex Compute",
+            "logic": "Implement caching and lazy loading specific to LlamaIndex to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}

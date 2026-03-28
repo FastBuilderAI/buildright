@@ -1,0 +1,132 @@
+{
+    "Backend_Java_Spring_Boot": [
+        {
+            "id": "SPRING_BOOT_CORE_01",
+            "action": "Initialize Spring Boot Architecture",
+            "logic": "Follow the official Spring Boot design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "SPRING_BOOT_SEC_01",
+            "action": "Enforce Spring Boot Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Spring Boot identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "SPRING_BOOT_PERF_01",
+            "action": "Optimize Spring Boot Compute",
+            "logic": "Implement caching and lazy loading specific to Spring Boot to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Java_Quarkus": [
+        {
+            "id": "QUARKUS_CORE_01",
+            "action": "Initialize Quarkus Architecture",
+            "logic": "Follow the official Quarkus design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "QUARKUS_SEC_01",
+            "action": "Enforce Quarkus Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Quarkus identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "QUARKUS_PERF_01",
+            "action": "Optimize Quarkus Compute",
+            "logic": "Implement caching and lazy loading specific to Quarkus to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Java_Micronaut": [
+        {
+            "id": "MICRONAUT_CORE_01",
+            "action": "Initialize Micronaut Architecture",
+            "logic": "Follow the official Micronaut design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "MICRONAUT_SEC_01",
+            "action": "Enforce Micronaut Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Micronaut identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "MICRONAUT_PERF_01",
+            "action": "Optimize Micronaut Compute",
+            "logic": "Implement caching and lazy loading specific to Micronaut to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Java_JavaEE": [
+        {
+            "id": "JAVAEE_CORE_01",
+            "action": "Initialize JavaEE Architecture",
+            "logic": "Follow the official JavaEE design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "JAVAEE_SEC_01",
+            "action": "Enforce JavaEE Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via JavaEE identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "JAVAEE_PERF_01",
+            "action": "Optimize JavaEE Compute",
+            "logic": "Implement caching and lazy loading specific to JavaEE to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ],
+    "Backend_Java_Play": [
+        {
+            "id": "PLAY_CORE_01",
+            "action": "Initialize Play Architecture",
+            "logic": "Follow the official Play design patterns and standard project structure for scalability.",
+            "data": "Configuration, Environment Variables",
+            "access": "Admin, System",
+            "event": "Startup"
+        },
+        {
+            "id": "PLAY_SEC_01",
+            "action": "Enforce Play Security Sanitization",
+            "logic": "Sanitize all inputs and handle authentication via Play identity providers or middleware.",
+            "data": "User Input, PII",
+            "access": "Public, Authenticated",
+            "event": "Request_Ingress"
+        },
+        {
+            "id": "PLAY_PERF_01",
+            "action": "Optimize Play Compute",
+            "logic": "Implement caching and lazy loading specific to Play to ensure high performance and low latency.",
+            "data": "Cache Store, Session",
+            "access": "Application Layer",
+            "event": "Optimization_Loop"
+        }
+    ]
+}
