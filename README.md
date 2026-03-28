@@ -11,7 +11,14 @@
 
 ## 📽️ Ontological Architecture
 
-![BuildRight Ontological Memory: Tight Compressed Engineering Health Graph](assets/v2_memory_graph.png)
+![BuildRight Orbital Sunburst: Tightly Compressed Engineering Health Logic](assets/v3_sunburst_ontology.png)
+
+### 📐 Orbital Ontology
+The **Orbital Sunburst** visualization above represents the "Horizontal Layer of Truth" for AI engineering logic. Unlike traditional clouds, this structured partition organizes depth from the **Core System** out to the **Fine-Grained CBFDAE Details**:
+*   **Inner Ring**: Systems and global categories.
+*   **Mid-Segments**: Industry frameworks (OWASP, SOLID, 12-Factor).
+*   **Outer Fronds**: Individual principles and logic clusters.
+*   **Interactivity**: Click any segment to zoom into its specific engineering logic.
 
 ```mermaid
 graph TD
