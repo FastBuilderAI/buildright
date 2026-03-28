@@ -11,35 +11,58 @@
 
 ## 📽️ Ontological Architecture
 
-![BuildRight Orbital Sunburst: Tightly Compressed Engineering Health Logic](assets/v3_sunburst_ontology.png)
+![The Great Expansion: 130+ Engineering Frameworks Ontological Sunburst](assets/v4_great_expansion.png)
 
-### 📐 Orbital Ontology
-The **Orbital Sunburst** visualization above represents the "Horizontal Layer of Truth" for AI engineering logic. Unlike traditional clouds, this structured partition organizes depth from the **Core System** out to the **Fine-Grained CBFDAE Details**:
-*   **Inner Ring**: Systems and global categories.
-*   **Mid-Segments**: Industry frameworks (OWASP, SOLID, 12-Factor).
-*   **Outer Fronds**: Individual principles and logic clusters.
-*   **Interactivity**: Click any segment to zoom into its specific engineering logic.
+### 📐 The Great Expansion
+BuildRight has been expanded to a massive scale, covering the **Breadth of 130+ Industry Frameworks**. This "Digital Mandala" provides a structured, multi-layered partition of engineering truth, from high-level domains down to fine-grained logic clusters.
 
 ```mermaid
 graph TD
-    A[Raw Standards: JSON/XML] --> B(BuildRight Generator)
+    A[130+ Raw Standards: JSON/XML] --> B(BuildRight Generator)
     B --> C{FastMemory Engine}
-    C --> D[buildright.md: ATF Context]
-    C --> E[buildright.json: Logic Graph]
+    C --> D[buildright.md: 1000+ Logic Nodes]
+    C --> E[buildright.json: Global Hierarchy]
     D --> F[AI Agents: Claude/Cursor/Copilot]
-    E --> G[D3.js Visualization Dashboard]
+    E --> G[High-Density Sunburst v4]
     F --> H[High-Health Code Output]
 ```
 
 ---
 
-## 🧠 Core Engineering Frameworks
+## 🧠 130+ Core Engineering Frameworks
 
-BuildRight ships with pre-clustered ontological memories for:
-- **Security**: Full OWASP Top 10 (2021) and critical CWE Top 25 preventions.
-- **Architecture**: SOLID Principles and the Twelve-Factor App methodology.
-- **Hygiene**: Clean Code standards (DRY, KISS, YAGNI, Boy Scout Rule).
-- **Custom**: Easy ingestion of enterprise-specific XML/JSON standards.
+BuildRight now ships with a massive breadth of pre-clustered ontological memories. Use the **Exploration Dashboard** to drill into the specific logic layers for any of the following:
+
+| | | | | |
+| :--- | :--- | :--- | :--- | :--- |
+| **ADONISJS** | **ADONISJS** | **AGILE** | **AIRFLOW** | **ALPINEJS** |
+| **ANGULAR** | **ANSIBLE** | **ANTHROPIC** | **ARM** | **ASPNET** |
+| **ASYNCAPI** | **ACTIX** | **ADONISJS** | **AWS** | **AXUM** |
+| **AZURE** | **BEEGO** | **BOOTSTRAP** | **BUFFALO** | **CASSANDRA** |
+| **CELERY** | **CHAI** | **CHROMADB** | **CIS** | **CLOUDFOUNDRY** |
+| **COUCHDB** | **CYPRESS** | **DAGSTER** | **DASH** | **DATABASES** |
+| **DEVSECOPS** | **DJANGO** | **DOCKER** | **DOTNET_CORE** | **DYNAMODB** |
+| **ECHO** | **EBPF** | **ELECTRON** | **EXPRESS** | **FASTAPI** |
+| **FASTIFY** | **FIBER** | **FINOPS** | **FLASK** | **FLINK** |
+| **FLUTTER** | **FREERTOS** | **GCP** | **GDPR** | **GIN** |
+| **GO** | **GRAPHQL** | **GRPC** | **HADOOP** | **HAYSTACK** |
+| **HELM** | **HIPAA** | **HUGGINGFACE** | **ISO_27001** | **JAVA** |
+| **JAVAEE** | **JEST** | **JETPACKCOMPOSE** | **JUNIT** | **KAFKA** |
+| **KANBAN** | **KISS** | **KOA** | **KOTLIN_MP** | **KUBERNETES** |
+| **LANGCHAIN** | **LARAVEL** | **LINUX_KERNEL** | **LIT** | **LLAMAINDEX** |
+| **METADATA** | **MICRONAUT** | **MONGODB** | **MYSQL** | **NEO4J** |
+| **NESTJS** | **NEXTJS** | **NIST** | **NODEJS** | **NUXT** |
+| **ODATA** | **OPENAPI** | **OPENAI_API** | **OPENSTACK** | **ORACLE** |
+| **OWASP_ASVS** | **OWASP_SAMM** | **PCIDSS** | **PHOENIX** | **PINECONE** |
+| **PLAY** | **PLAYWRIGHT** | **POEM** | **POSIX** | **POSTGRESQL** |
+| **PULUMI** | **PYRAMID** | **PYTEST** | **PYTORCH** | **QUARKUS** |
+| **RABBITMQ** | **RAILS** | **REACT** | **REACT_NATIVE** | **REDIS** |
+| **REMIX** | **REST** | **ROCKET** | **RUST** | **SCIKITLEARN** |
+| **SCRUM** | **SELENIUM** | **SERVERLESS** | **SOAP** | **SOC2** |
+| **SOLIDJS** | **SPARK** | **SPRING_BOOT** | **SQLITE** | **SRE** |
+| **SVELTE** | **SWIFTUI** | **SYMFONY** | **TAILWIND** | **TAURI** |
+| **TENSORFLOW** | **TERRAFORM** | **TRPC** | **VITEST** | **VUE** |
+| **WARP** | **WASM** | **WINDOWS_API** | **YAGNI** | **ZOD** |
 
 ---
 
