@@ -1,1 +1,1 @@
-fastmemory>=0.2.1
+fastmemory>=0.2.2
