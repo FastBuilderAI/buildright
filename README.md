@@ -1,5 +1,7 @@
 # 🛡️ BuildRight: The "Horizontal Layer of Truth" for AI Engineering
 
+![FastBuilder Benchmarks](banner.png)
+
 [![FastMemory](https://img.shields.io/badge/Powered%20By-FastMemory-blue?style=flat-square)](https://github.com/FastBuilderAI/memory)
 [![Security](https://img.shields.io/badge/Security-OWASP--Top--10-red?style=flat-square)](https://owasp.org/www-project-top-ten/)
 [![Architecture](https://img.shields.io/badge/Architecture-SOLID-green?style=flat-square)](https://en.wikipedia.org/wiki/SOLID)
