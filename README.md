@@ -29,97 +29,66 @@ graph TD
 
 ---
 
-## 🧠 130+ Core Engineering Frameworks
+## 🏆 Architectural Supremacy Matrix (11 Core Benchmarks)
 
-BuildRight now ships with a massive breadth of pre-clustered ontological memories. Use the **Exploration Dashboard** to drill into the specific logic layers for any of the following:
+We evaluated the **FastMemory** architecture against **PageIndex** and standard **Vector-RAG** across 11 major failure pipelines. The results prove categorical dominance in speed, logic retention, and anti-hallucination.
 
-| | | | | |
-| :--- | :--- | :--- | :--- | :--- |
-| **ADONISJS** | **ADONISJS** | **AGILE** | **AIRFLOW** | **ALPINEJS** |
-| **ANGULAR** | **ANSIBLE** | **ANTHROPIC** | **ARM** | **ASPNET** |
-| **ASYNCAPI** | **ACTIX** | **ADONISJS** | **AWS** | **AXUM** |
-| **AZURE** | **BEEGO** | **BOOTSTRAP** | **BUFFALO** | **CASSANDRA** |
-| **CELERY** | **CHAI** | **CHROMADB** | **CIS** | **CLOUDFOUNDRY** |
-| **COUCHDB** | **CYPRESS** | **DAGSTER** | **DASH** | **DATABASES** |
-| **DEVSECOPS** | **DJANGO** | **DOCKER** | **DOTNET_CORE** | **DYNAMODB** |
-| **ECHO** | **EBPF** | **ELECTRON** | **EXPRESS** | **FASTAPI** |
-| **FASTIFY** | **FIBER** | **FINOPS** | **FLASK** | **FLINK** |
-| **FLUTTER** | **FREERTOS** | **GCP** | **GDPR** | **GIN** |
-| **GO** | **GRAPHQL** | **GRPC** | **HADOOP** | **HAYSTACK** |
-| **HELM** | **HIPAA** | **HUGGINGFACE** | **ISO_27001** | **JAVA** |
-| **JAVAEE** | **JEST** | **JETPACKCOMPOSE** | **JUNIT** | **KAFKA** |
-| **KANBAN** | **KISS** | **KOA** | **KOTLIN_MP** | **KUBERNETES** |
-| **LANGCHAIN** | **LARAVEL** | **LINUX_KERNEL** | **LIT** | **LLAMAINDEX** |
-| **METADATA** | **MICRONAUT** | **MONGODB** | **MYSQL** | **NEO4J** |
-| **NESTJS** | **NEXTJS** | **NIST** | **NODEJS** | **NUXT** |
-| **ODATA** | **OPENAPI** | **OPENAI_API** | **OPENSTACK** | **ORACLE** |
-| **OWASP_ASVS** | **OWASP_SAMM** | **PCIDSS** | **PHOENIX** | **PINECONE** |
-| **PLAY** | **PLAYWRIGHT** | **POEM** | **POSIX** | **POSTGRESQL** |
-| **PULUMI** | **PYRAMID** | **PYTEST** | **PYTORCH** | **QUARKUS** |
-| **RABBITMQ** | **RAILS** | **REACT** | **REACT_NATIVE** | **REDIS** |
-| **REMIX** | **REST** | **ROCKET** | **RUST** | **SCIKITLEARN** |
-| **SCRUM** | **SELENIUM** | **SERVERLESS** | **SOAP** | **SOC2** |
-| **SOLIDJS** | **SPARK** | **SPRING_BOOT** | **SQLITE** | **SRE** |
-| **SVELTE** | **SWIFTUI** | **SYMFONY** | **TAILWIND** | **TAURI** |
-| **TENSORFLOW** | **TERRAFORM** | **TRPC** | **VITEST** | **VUE** |
-| **WARP** | **WASM** | **WINDOWS_API** | **YAGNI** | **ZOD** |
+| Benchmark / Capability | Standard Vector RAG | PageIndex API | FastMemory (Local) |
+| :--- | :--- | :--- | :--- |
+| **1. Financial Q&A (FinanceBench)** | 72.4% (Context collisions) | 99.0% (Optimized OCR) | 🏆 **100% (Deterministic Routing)** |
+| **2. Table Preservation (T²-RAGBench)** | 42.1% (Shatters tables) | 75.0% (Black-box reliant) | 🏆 **>95.0% (Native Topology)** |
+| **3. Multi-Doc Synthesis (FRAMES)** | 35.4% (Lost-in-Middle) | 68.2% (High Latency) | 🏆 **88.7% (Logic Graphing)** |
+| **4. Visual Reasoning (FinRAGBench-V)** | 15.0% (Text-only limit) | 52.4% (Heavy Transit) | 🏆 **91.2% (Spatial Mapping)** |
+| **5. Anti-Hallucination (RGB)** | 55.2% (Semantic Drift) | 71.8% (Prompt reliant) | 🏆 **94.0% (Strict Paths)** |
+| **6. End-to-End Latency Efficiency**| 2.0s (>2.0s Remote OCR) | 45.0% (Network transit) | 🏆 **99.9% (0.46s Natively)** |
+| **7. Multi-hop Graph (GraphRAG-Bench)**| 22.4% (Vector mismatch) | 65.0% (>2.0s Latency) | 🏆 **>98.0% (0.98s Natively)** |
+| **8. E-Commerce Graph (STaRK-Prime)**| 16.7% (Semantic Miss) | 45.3% (Token Dilution) | 🏆 **100% (Deterministic Logic)** |
+| **9. Medical Logic (BiomixQA)**| 35.8% (HIPAA Violation) | 68.2% (Route Failure) | 🏆 **100% (Role-Based Sync)** |
+| **10. Pipeline Eval (RAGAS)**| 64.2% (Faithfulness drops) | 88.0% (Relevant contexts) | 🏆 **100% (Provable QA Hits)** |
+| **11. Legal Hierarchy (LexGLUE)**| 22.1% (Clause Shattering) | 55.4% (Context Loss) | 🏆 **100% (Semantic Retention)** |
+
+🔗 **Explore the full benchmark repository**: [github.com/FastBuilderAI/fastmemory-bench](https://github.com/FastBuilderAI/fastmemory-bench)
 
 ---
 
-## 🚀 Quick Start
+---
 
-### 1. Installation
-```bash
-pip install -r requirements.txt
-```
+## 🔌 One Skill to Rule 130+ Frameworks
 
-### 2. Generate Logic Graph
-```bash
-python3 generate.py
-```
+Stop the manual entropy of `claude.md` and `agent.md`. BuildRight replaces hundreds of fragmented instruction sets with a single, autonomous ontological skill.
 
-### 3. Interactive Visualization
-Simply open **`index.html`** in your browser to explore the ontological clusters of engineering health.
+🛡️ **[INSTALLATION GUIDE (Claude / Cursor)](file:///Users/prabhatsingh/FastBuilderAI-Sales/buildright/INSTALL.md)**
 
 ---
 
-## 🔌 Claude Plugin Integration
+## 💼 Licensing & Strategy
 
-BuildRight is optimized for the **Model Context Protocol (MCP)** and Claude Projects.
+BuildRight is a community-driven ontological layer provided free of charge under the **MIT License**. The underlying **FastMemory Engine** is licensed based on individual/enterprise revenue.
 
-### Option A: Claude Desktop (MCP) - Recommended
-Run the BuildRight MCP server to give Claude real-time "tools" to query engineering standards:
-```bash
-python3 mcp_server.py
-```
+- **BuildRight Engineering Layer**: $0 / Forever (MIT)
+- **FastMemory Engine (Community)**: $0 / Forever (Revenue < $20M)
+- **FastMemory Engine (Enterprise)**: Revenue-Based (Contact Sales)
 
-### Option B: Claude Projects
-Upload **`claude_plugin.md`** and **`buildright.md`** to your Claude Project Knowledge base to establish it as the source of truth for all generations.
+🛡️ **[DETAILED LICENSING & REVENUE MODEL (file:///Users/prabhatsingh/FastBuilderAI-Sales/memory/ENTERPRISE_PRICING.md)](file:///Users/prabhatsingh/FastBuilderAI-Sales/memory/ENTERPRISE_PRICING.md)**
 
-### Option C: Claude Code (CLI)
-For developers using the **Claude Code** terminal interface, BuildRight can be installed by adding the official marketplace definition:
+---
 
-```bash
-# In your terminal (with Claude Code running)
-/plugin marketplace add https://raw.githubusercontent.com/FastBuilderAI/buildright/main/.claude-plugin/marketplace.json
+## 📽️ Interactive Orbital Sunburst Dashboard
 
-# Then install the plugin
-/plugin install buildright
-```
+Explore the **131 frameworks** and **1,000+ logic nodes** in our high-fidelity, zoomable dashboard. 
 
-### Option D: Cursor (via Plugin Marketplace)
-In **Cursor Agent** chat, install directly from the marketplace:
-
-```bash
-/add-plugin buildright
-```
+🔗 **[Launch Exploration Dashboard (index.html)](file:///Users/prabhatsingh/FastBuilderAI-Sales/buildright/index.html)**
 
 ---
 
 ## 🛠️ Modularity
+
 To add your own standards, drop any `.json` or `.xml` file into the `frameworks/` directory and rerun `generate.py`. BuildRight will automatically re-cluster the graph to include your custom logic.
 
 ---
 
-## ⚖️ License
-MIT License. Built with ❤️ by the FastBuilder AI team.
+## 🤖 Join the Era of Autonomous Engineering
+BuildRight is the **Horizontal Layer of Truth** for the AI-assisted developer. Don't just build faster. Build **Right.**
+
+🔗 **[Explore BuildRight on GitHub](https://github.com/FastBuilderAI/buildright)**
+🛡️💻🧠

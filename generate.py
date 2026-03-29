@@ -118,7 +118,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                         name: n.id,
                         action: n.action,
                         logic: n.logic,
-                        type: n.cbfdae_level || "Function",
+                        type: n.topology_level || "Function",
                         value: 1 // Equal weighting for blocks initially
                     })) : []
                 }))
@@ -294,14 +294,14 @@ def main():
     # 2. Build Memory Graph
     print("Building Global Ontological Memory Graph using 'fastmemory' lib...")
     try:
-        cbfdae_json_graph = fastmemory.process_markdown(atf_content)
+        topology_json_graph = fastmemory.process_markdown(atf_content)
         with open(json_file, "w") as f:
-            f.write(cbfdae_json_graph)
+            f.write(topology_json_graph)
         print(f"Successfully clustered unified memory graph into: {json_file}")
         
         # 3. Generate UI Data Bridge
         with open(js_file, "w") as f:
-            f.write(f"const fastMemoryData = {cbfdae_json_graph};")
+            f.write(f"const fastMemoryData = {topology_json_graph};")
         print(f"Successfully generated UI bridge: {js_file}")
 
         # 4. Generate Interactive Dashboard
