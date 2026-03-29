@@ -49,7 +49,7 @@ We evaluated the **FastMemory** architecture against **PageIndex** and standard 
 | **10. Pipeline Eval (RAGAS)**| 64.2% (Faithfulness drops) | 88.0% (Relevant contexts) | 🏆 **100% (Provable QA Hits)** |
 | **11. Legal Hierarchy (LexGLUE)**| 22.1% (Clause Shattering) | 55.4% (Context Loss) | 🏆 **100% (Semantic Retention)** |
 
-🔗 **Explore the full benchmark repository**: [github.com/FastBuilderAI/fastmemory-bench](https://github.com/FastBuilderAI/fastmemory-bench)
+🔗 **Explore the full benchmark repository**: [github.com/FastBuilderAI/memory](https://github.com/FastBuilderAI/memory)
 
 ---
 
